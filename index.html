@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>바림</title>
+    <link rel="stylesheet" href="master.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <nav>
+          <div class="menu">
+            <ul>
+              <li><a onclick="fnMove('1')" class="focus-in-expand">Main</a></li>
+              <li><a onclick="fnMove('2')" class="focus-in-expand">Brand</a></li>
+              <li><a onclick="fnMove('3')" class="focus-in-expand">Essence</a></li>
+              <li><a onclick="fnMove('4')" class="focus-in-expand">Package</a></li>
+              <li><a onclick="fnMove('5')" class="focus-in-expand">Video</a></li>
+            </ul>
+          </div>
+        </nav>
+      </header>
+
+    <div class="box_m" id="anchor1">
+        <div class="wrap">
+            <div class="si1"
+            data-aos="fade-zoom-in"
+            data-aos-easing="ease-in-back"
+            data-aos-delay="0"
+            data-aos-offset="0"
+            data-aos-duration="2000">
+             <img src="img/logo_g.png" alt="메인 로고">
+             </div>
+         </div>
+     </div>
+    <div class="box1">
+        <div class="wrap">
+            <img src="img/01_text.png" alt="">
+        </div></div>
+    <div class="box2" id="anchor2">
+        <div class="wrap">
+            <img src="img/02_text.png" alt="텍스트">
+        </div></div>
+    <div class="box3">
+        <div class="wrap">
+            <div class="sub_logo"
+            data-aos="fade-zoom-in"
+            data-aos-easing="ease-in-back"
+            data-aos-delay="0"
+            data-aos-offset="0"
+            data-aos-duration="1000">
+             <img src="img/03_logo.png" alt="서브 로고">
+             </div>
+        </div>
+    </div>
+    <div class="box4">
+        <div class="wrap"></div></div>
+    <div class="box5" id="anchor3">
+        <div class="wrap">
+            <div class="text_1"
+            data-aos="fade-in"
+            data-aos-duration="500"
+            data-aos-delay="600">
+                <img src="img/resting.png" alt="휴식">
+            </div>
+            <div class="img_1"
+            data-aos="fade-left"
+            data-aos-easing="ease-in-sine"
+            data-aos-offset="500"
+            data-aos-duration="500">
+                <img src="img/05_img_1.png" alt="휴식이미지">
+            </div>
+            <div class="text_2"
+            data-aos="fade-in"
+            data-aos-duration="500"
+            data-aos-delay="600">
+                <img src="img/healing.png" alt="치유">
+            </div>
+            <div class="img_2"
+            data-aos="fade-right"
+            data-aos-offset="500"
+            data-aos-duration="500"
+            data-aos-easing="ease-in-sine">
+                <img src="img/05_img_2.png" alt="치유이미지">
+            </div>
+            <div class="text_3"
+            data-aos="fade-in"
+            data-aos-duration="500"
+            data-aos-delay="600">
+                <img src="img/scent.png" alt="향취">
+            </div>
+            <div class="img_3"
+            data-aos="fade-left"
+            data-aos-easing="ease-in-sine"
+            data-aos-offset="500"
+            data-aos-duration="500">
+                <img src="img/05_img_3.png" alt="향취이미지">
+            </div>
+        </div></div>
+    <div class="box6" id="anchor4">
+        <div class="wrap">
+            <div class="text06"
+            data-aos="fade-in"
+            data-aos-duration="700"
+            data-aos-delay="400">
+                <img src="img/06_text.png" alt="06텍스트">
+            </div>
+            <div class="img06_0">
+                <img src="img/06_img_0.png"></img>
+            </div>
+            <div class="img06_1">
+                <img src="img/06_img_1.png"></img>
+            </div>
+            <div class="img06_2">
+                <img src="img/06_img_2.png"></img>
+            </div>
+            <div class="img06_3">
+                <img src="img/06_img_3.png"></img>
+            </div>
+            <div class="img06_4">
+                <img src="img/06_img_4.png"></img>
+            </div>
+        </div></div>
+    <div class="box7" id="anchor5">
+        <video autoplay loop muted class="video01">
+            <source src="img/video_01.mp4" type="video/mp4">
+            </video>
+        </div>
+        <footer>
+            <br>
+            Design by Sangbeom,Yu.  All rights reserved.<br>
+            yoosb0796@gmail.com <br>
+            +82 10-2044-0796
+        </footer>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
+
+<script type="text/javascript" src="anchor_jquery.js"></script>
+<script>
+  function fnMove(seq){
+      var offset = $("#anchor" + seq).offset();
+      $('html, body').animate({scrollTop : offset.top},1000);
+  }
+</script>
+</body>
+</html>
